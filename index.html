@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>⛅️ Previsão do Tempo</h1>
+        <div class="search">
+            <input type="text" id="city" placeholder="Digite o nome da cidade">
+            <button onclick="getWeather()">Buscar</button>
+        </div>
+
+        <div class="weather-info">
+            <h2 id="city-name"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </div>
+        <img src="assets/icons/nuvem.svg" alt="" id="weather-icon">
+        <div class="forecast">
+            <h3>📊 Previsão para os próximos dias</h3>
+            <canvas id="forecastChart"></canvas>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/chart.js"></script>
+</body>
+</html>
